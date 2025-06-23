@@ -11,12 +11,8 @@ module "vpc" {
     private_subnet_cidrs = var.private_subnet_cidrs
     database_subnet_cidrs = var.database_subnet_cidrs
 
-    is_peering_required = false
+    #is_peering_required = true
 
 
 }
 
-output "vpc_id" {
-    value = module.vpc.vpc_id
-  
-}

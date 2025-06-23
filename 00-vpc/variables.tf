@@ -14,7 +14,7 @@
 # }
 
 variable "project_name" {
-    default = "Roboshop"
+    default = "roboshop"
 }
 
 variable "environment" {
