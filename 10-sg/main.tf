@@ -1,0 +1,9 @@
+module "sg" {
+    source = "git::https://github.com/Siva3150/terraform-aws-securitygroup-84s.git?ref=main"
+
+
+    project = var.project
+    environment = var.environment
+    sg_name = var.frontend_sg_name
+    sg_description = var.frontend_sg_description
+}
