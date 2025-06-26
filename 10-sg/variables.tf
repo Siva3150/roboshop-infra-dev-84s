@@ -22,5 +22,13 @@ variable "bastion_sg_description" {
     default = "created sg for bastion instance"
 }
 
+variable "backend_alb__sg_name" {
+    default = "backend_alb"
+}
+
+variable "baclend-alb_sg_description" {
+    default = "created sg for backend load balancer"
+}
+
 
 
