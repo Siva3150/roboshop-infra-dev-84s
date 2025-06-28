@@ -30,5 +30,13 @@ variable "baclend-alb_sg_description" {
     default = "created sg for backend load balancer"
 }
 
+variable "vpn_sg_name" {
+    default = "opensource_vpn"
+}
+
+variable "vpn_sg_description" {
+    default = "created sg for open source vpn"
+}
+
 
 
