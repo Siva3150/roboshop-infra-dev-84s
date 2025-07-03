@@ -236,6 +236,16 @@ resource "aws_security_group_rule" "catalogue_vpn_http" {
   source_security_group_id = module.vpn.sg_id
   security_group_id = module.catalogue.sg_id
 }
+  
+resource "aws_security_group_rule" "catalogue_bastion" {
+  type              = "ingress"
+  from_port         = 22
+  to_port           = 22
+  protocol          = "tcp"
+  source_security_group_id = module.bastion.sg_id
+  security_group_id = module.catalogue.sg_id
+}
+
 
 resource "aws_security_group_rule" "catalogue_backend_alb" {
   type              = "ingress"
