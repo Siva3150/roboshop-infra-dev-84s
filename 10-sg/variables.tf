@@ -14,6 +14,13 @@ variable "frontend_sg_description" {
     default = "created sg for frontend instance"
 }
 
+variable "frontend_alb_sg_name" {
+    default = "frontend_alb"
+}
+
+variable "frontend_alb_sg_description" {
+    default = "created sg for frontend alb"
+}
 variable "bastion_sg_name" {
     default = "bastion"
 }
@@ -22,11 +29,11 @@ variable "bastion_sg_description" {
     default = "created sg for bastion instance"
 }
 
-variable "backend_alb__sg_name" {
+variable "backend_alb_sg_name" {
     default = "backend_alb"
 }
 
-variable "baclend-alb_sg_description" {
+variable "backend_alb_sg_description" {
     default = "created sg for backend load balancer"
 }
 
@@ -76,6 +83,38 @@ variable "catalogue_sg_name" {
 
 variable "catalogue_sg_description" {
     default = "created sg for catalogue"
+}
+
+variable "user_sg_name" {
+    default = "user"
+}
+
+variable "user_sg_description" {
+    default = "created sg for user"
+}
+
+variable "cart_sg_name" {
+    default = "cart"
+}
+
+variable "cart_sg_description" {
+    default = "created sg for cart"
+}
+
+variable "shipping_sg_name" {
+    default = "shipping"
+}
+
+variable "shipping_sg_description" {
+    default = "created sg for shipping"
+}
+
+variable "payment_sg_name" {
+    default = "payment"
+}
+
+variable "payment_sg_description" {
+    default = "created sg for payment"
 }
 
 variable "mongodb_ports_vpn" {
