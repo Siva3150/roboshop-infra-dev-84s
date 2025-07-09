@@ -3,6 +3,7 @@ resource "aws_instance" "mongodb" {
   instance_type = "t3.micro"
   vpc_security_group_ids = [local.mongodb_sg_id]
   subnet_id = local.database_subnet_id
+  #availability_zone = local.preferred_az
 
   tags = merge(
     local.common_tags,
@@ -43,6 +44,7 @@ resource "aws_instance" "redis" {
   instance_type = "t3.micro"
   vpc_security_group_ids = [local.redis_sg_id]
   subnet_id = local.database_subnet_id
+  #availability_zone = local.preferred_az
 
   tags = merge(
     local.common_tags,
@@ -84,6 +86,7 @@ resource "aws_instance" "mysql" {
   vpc_security_group_ids = [local.mysql_sg_id]
   subnet_id = local.database_subnet_id
   iam_instance_profile = "EC2RoleToFetchParams"
+  #availability_zone = local.preferred_az
 
   tags = merge(
     local.common_tags,
@@ -124,6 +127,8 @@ resource "aws_instance" "rabbitmq" {
   instance_type = "t3.micro"
   vpc_security_group_ids = [local.rabbitmq_sg_id]
   subnet_id = local.database_subnet_id
+  #availability_zone = local.preferred_az
+
 
   tags = merge(
     local.common_tags,
