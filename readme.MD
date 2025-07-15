@@ -3,4 +3,4 @@
 
 This diagram shows the architecture of the Roboshop application deployed on AWS infrastructure:
 
-![Roboshop VM Architecture](C:\Users\Siva\Desktop\roboshop-infra-dev.png)
+![Roboshop VM Architecture](roboshop-infra-dev.svg)
